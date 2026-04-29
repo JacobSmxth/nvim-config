@@ -1,0 +1,13 @@
+-- Bash / Shell language support is fully covered by the base additions stack.
+-- No additional plugins are required for the core shell workflow.
+--
+-- Where each piece lives:
+--   LSP:        bashls (bash-language-server) → lua/additions/lsp.lua
+--   Formatter:  shfmt  → lua/additions/formatting.lua
+--   Mason:      bash-language-server, shfmt → lua/additions/mason.lua
+--   Treesitter: bash   → lua/additions/treesitter.lua
+--
+-- bashls is configured to cover sh, bash, and zsh filetypes.
+-- shfmt uses 4-space indent with switch-case indenting (-ci) and
+-- binary operators at end of line (-bn) — adjust in additions/formatting.lua.
+return {}

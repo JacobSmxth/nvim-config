@@ -1,0 +1,16 @@
+-- JavaScript / TypeScript language support is fully covered by the base additions stack.
+-- No additional plugins are required for the core JS/TS workflow.
+--
+-- Where each piece lives:
+--   LSP:        ts_ls (typescript-language-server) → lua/additions/lsp.lua
+--   Formatter:  prettier  → lua/additions/formatting.lua
+--   Mason:      typescript-language-server, prettier → lua/additions/mason.lua
+--   Treesitter: javascript, typescript → lua/additions/treesitter.lua
+--
+-- ts_ls is the lspconfig server name for typescript-language-server as of
+-- nvim-lspconfig v0.1.7+. If you see "tsserver" in older configs, ts_ls is its
+-- direct replacement.
+--
+-- prettier is configured with --print-width 100 — adjust in additions/formatting.lua.
+-- A .prettierrc in the project root overrides all CLI args.
+return {}

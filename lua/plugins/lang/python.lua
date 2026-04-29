@@ -1,0 +1,16 @@
+-- Python language support is fully covered by the base additions stack.
+-- No additional plugins are required for the core Python workflow.
+--
+-- Where each piece lives:
+--   LSP:        pyright  → lua/additions/lsp.lua
+--   Formatter:  black    → lua/additions/formatting.lua
+--   Mason:      pyright, black → lua/additions/mason.lua
+--   Treesitter: python   → lua/additions/treesitter.lua
+--
+-- pyright is configured with typeCheckingMode = "basic" to avoid noise on
+-- untyped codebases. Raise to "strict" in additions/lsp.lua for typed projects.
+--
+-- Virtual environment awareness: pyright detects the active venv automatically
+-- if activated in the shell before Neovim starts. For in-editor venv switching,
+-- consider adding linux-cultist/venv-selector.nvim here.
+return {}

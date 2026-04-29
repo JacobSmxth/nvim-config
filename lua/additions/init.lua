@@ -1,0 +1,20 @@
+-- additions/ — all custom runtime behavior for this Neovim configuration.
+--
+-- This file is not required by anyone. It is a documentation anchor.
+--
+-- Every file in this directory is required by a specific base wiring stub:
+--
+--   options.lua    ← required by lua/options.lua
+--   mappings.lua   ← required by lua/mappings.lua
+--   autocmds.lua   ← required by lua/autocmds.lua
+--   lsp.lua        ← required by lua/configs/lspconfig.lua
+--   mason.lua      ← required by lua/plugins/additions.lua (mason spec opts)
+--   treesitter.lua ← required by lua/plugins/additions.lua (treesitter spec opts)
+--   formatting.lua ← required by lua/configs/conform.lua
+--   dap.lua        ← required by lua/plugins/additions.lua (dap + dapui specs)
+--
+-- Plugin declarations live in:
+--   lua/plugins/additions.lua     — non-language-specific plugins
+--   lua/plugins/lang/<lang>.lua   — per-language plugins
+--
+-- See Future_additions.md at the repo root for the full rules.
